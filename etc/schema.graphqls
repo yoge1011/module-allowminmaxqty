@@ -1,0 +1,8 @@
+
+type StoreConfig {
+    
+    allowedminmaxqty_general_settings_enable  : String  @doc(description: "Query by allowedminmaxqty_general_settings_enable.") ,
+    allowedminmaxqty_general_settings_type  : String  @doc(description: "Query by allowedminmaxqty_general_settings_type.") ,
+    allowedminmaxqty_general_settings_min_allowed_qty  : String  @doc(description: "Query by allowedminmaxqty_general_settings_min_allowed_qty.") ,
+    allowedminmaxqty_general_settings_max_allowed_qty  : String  @doc(description: "Query by allowedminmaxqty_general_settings_max_allowed_qty.") ,
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Yogendra/module-allowedminmaxqty",
+    "description": "Magento 2 Extension to set Minimum and Maximum Qty of Items while adding to cart",
+    "type": "magento2-module",
+    "version": "dev-master",
+    "license": [
+        "OSL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Manish Joy",
+            "email": "Yogendra1993@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Yogendra\\AllowedMinMaxQty\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

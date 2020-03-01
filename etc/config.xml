@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<allowedminmaxqty>
+			<general_settings>
+				<enabled>1</enabled>
+				<type>1</type>
+				<min_allowed_qty>1</min_allowed_qty>
+				<max_allowed_qty>10000</max_allowed_qty>
+			</general_settings>
+		</allowedminmaxqty>
+	</default>
+</config>

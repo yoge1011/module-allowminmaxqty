@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<section id="allowedminmaxqty" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+			<label>Allowed MinMax Qty</label>
+			<tab>Yogendra</tab>
+			<resource>Yogendra_AllowedMinMaxQty::config_Yogendra_allowedminmaxqty</resource>
+			<group id="general_settings" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Configuration</label>
+				<field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+				<field id="type" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label" type="select">
+					<label>Implementation Level</label>
+					<depends>
+                        <field id="*/*/enabled">1</field>
+                    </depends>
+					<comment/>
+					<source_model>Yogendra\AllowedMinMaxQty\Model\Config\Source\Type</source_model>
+				</field>
+				<field id="min_allowed_qty" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="30" translate="label" type="text">
+					<label>Minimum Allowed Qty</label>
+					<depends>
+                        <field id="*/*/enabled">1</field>
+                        <field id="*/*/type">1</field>
+                    </depends>
+					<comment/>
+				</field>
+				<field id="max_allowed_qty" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="40" translate="label" type="text">
+					<label>Maximum Allowed Qty</label>
+					<depends>
+						<field id="*/*/enabled">1</field>
+                        <field id="*/*/type">1</field>
+                    </depends>
+					<comment/>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Magento\StoreGraphQl\Model\Resolver\Store\StoreConfigDataProvider">
+		<arguments>
+			<argument name="extendedConfigData" xsi:type="array">
+				<item name="allowedminmaxqty_general_settings_enable" xsi:type="string">allowedminmaxqty/general_settings/enable</item>
+				<item name="allowedminmaxqty_general_settings_type" xsi:type="string">allowedminmaxqty/general_settings/type</item>
+				<item name="allowedminmaxqty_general_settings_min_allowed_qty" xsi:type="string">allowedminmaxqty/general_settings/min_allowed_qty</item>
+				<item name="allowedminmaxqty_general_settings_max_allowed_qty" xsi:type="string">allowedminmaxqty/general_settings/max_allowed_qty</item>
+			</argument>
+		</arguments>
+	</type>
+</config>
